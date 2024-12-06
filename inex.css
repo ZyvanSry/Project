@@ -5,23 +5,39 @@
 }
 header{
     width: 100vw;
+    height: 10vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .container{
-    width: 90%;
-    container: 100px;
+    width: 90vw;
+    /* container: 100px; */
     display: flex;
-    padding-top: 20px;
+    justify-content: center;
+    margin-inline: auto;
+    gap: 20px;
+    padding-inline: 20px;
+    /* background-color: blue; */
+}
+.containere{
+    width: 100vw;
+    /* container: 100px; */
+    display: flex;
+    margin-inline: auto;
+    margin-top: 0;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    /* padding-top: 20px; */
     padding-inline: 30px;
+    position: fixed;
     /* background-color: blue; */
 }
 nav{
     display: flex;
     justify-content: start;
     align-items: center;
+
     width: 30%;
 }
 
@@ -41,21 +57,32 @@ nav > ul > li >.nav{
     font-size: 20px;
 }
 .drop {
-    width: 80vw;
+    width: 100vw;
     position: absolute;
     top: 100%;
-    left: -30%;
+    left: -160%;
+    display: flex;
+    justify-content: center;
     background: rgb(255, 255, 255);
     transition: all 0.5s;
     height: 0;
     overflow: hidden;
     
 }
+table{
+    position: absolute;
+    padding-inline: 150px;
+}
+.table2{
+    padding-inline: 150px;
+    width: 50vw;position: absolute;
+    
+}
 .drop1 {
-    width: 80vw;
+    width: 100vw;
     position: absolute;
     top: 100%;
-    left: -200%;
+    left: -400%;
     background: rgb(255, 255, 255);
 
     transition: all 0.5s;
@@ -64,10 +91,10 @@ nav > ul > li >.nav{
     
 }
 .drop2 {
-    width: 80vw;
+    width: 100vw;
     position: absolute;
     top: 100%;
-    left: -332%;
+    left: -550%;
     background: rgb(255, 255, 255);
     transition: all 0.5s;
     height: 0;
@@ -75,11 +102,11 @@ nav > ul > li >.nav{
     
 }
 .drop3 {
-    width: 80vw;
+    width: 100vw;
     position: absolute;
     background: rgb(255, 255, 255);
     top: 100%;
-    left: -465%;
+    left: -700%;
     transition: all 1s;
     height: 0;
     overflow: hidden;
@@ -104,15 +131,19 @@ a{
 }
 nav > ul >.fonts:hover >.drop{
     height: 512px;
+    position: absolute;
 }
 nav > ul >.fonts:hover >.drop1{
     height: 460px;
+    position: absolute;
 }
 nav > ul >.fonts:hover >.drop2{
     height: 260px;
+    position: absolute;
 }
 nav > ul >.fonts:hover >.drop3{
     height: 260px;
+    position: absolute;
 }
 
 .logo{
@@ -131,14 +162,15 @@ nav > ul >.fonts:hover >.drop3{
 .input{
     display: flex;
     width: 30%;
+    margin-left: -50px;
     padding: 10px;
-    gap: 20px;
+    gap: 5px;
 }
 .logos{
     padding: 10px;
     gap: 20px;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
     font-size: 20px;
 }
@@ -147,23 +179,28 @@ span{
 }
 .searchb{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 .searchb > input{
     width: 200px;
-    height: 30px;
+    height: 40px;
     padding: 10px;
     font-size: 20px;
 }
 
 .LF{
     font-size: 20px;
-
-    padding: 20px;
+    /* display: flex; */
+    padding: 10px;
+    width: 100px;
     text-decoration: none;
     color: black;
+}
+
+.LF:hover{
+    background-color: rgb(225, 225, 225);
 }
 .fonts{
     font-family: sans-serif;
@@ -174,8 +211,60 @@ span{
 
 main{
     width: 100vw;
+}
+
+.pic{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    background-image: url("/Image/Com.png");
+}
+/* img{
+    width: 100%;
+    height: 80%;
+} */
+
+button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.548);
+    border: 3px solid white;
+    border-radius: 5px;
+    transition: all 0.25s;
+    /* box-shadow: -3px -3px 5px white ; */
+}
+
+button:hover{
+    transform: translateY(-5px);
+    box-shadow:none ;
+}
+
+.textbox{
+    width: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.box>a>img{
+    width: 300px;
+    height: 200px;
+}
 
+.box1>a>img{
+    width: 510px;
+    height: 800px;
+}
+.space{
+    width: 90vw;
+    height: 50px;
+    /* container: 100px; */
+    margin: auto;
+    gap: 20px;
+    /* background-color: blue; */
+}
